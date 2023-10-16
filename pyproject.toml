@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "linebot_playground"
+version = "0.1.0"
+description = ""
+authors = ["Jay Hsia <jayhsia1997@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "*"
+gunicorn = "*"
+line-bot-sdk = "*"
+python-dotenv = "*"
+pydantic-settings = "*"
+uvicorn = "*"
+# [other]
+dependency-injector = "*"
+redis = "^5.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
